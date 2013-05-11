@@ -30,6 +30,7 @@ type MyLogger struct {
 }
 
 // create logger
+// 创建日志实例
 // fileLogger, _ := NewLog(0, "abc.log", 10*1024, 5)
 // stderrLogger, _ := NewLog(0, "", 0, 0)
 func NewLog(level int, baseFileName string, maxBytes int64,
