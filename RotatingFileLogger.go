@@ -1,7 +1,7 @@
 package RotatingFileLogger
 
 import (
-  "fmt"
+	"fmt"
 	"log"
 	"os"
 )
@@ -30,7 +30,7 @@ type MyLogger struct {
 }
 
 // create logger
-// fileLogger, _ := NewLog(0, "../abc.log", 10*1024, 5)
+// fileLogger, _ := NewLog(0, "abc.log", 10*1024, 5)
 // stderrLogger, _ := NewLog(0, "", 0, 0)
 func NewLog(level int, baseFileName string, maxBytes int64,
 	backupCount int) (*MyLogger, error) {
